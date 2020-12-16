@@ -19,6 +19,9 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .header-mail{
+    padding-top: 0%!important;
+  }
   /*-- Address --*/
   .address-area {
     padding-top: 50px;
@@ -162,6 +165,9 @@
  }
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .top-banner{
+    padding-top: 0%;
+  }
   .appointment-content {
     text-align: center;
   }
@@ -213,13 +219,6 @@
   visibility: hidden;
   display: none;
 }
-.header-icons{
-  visibility: hidden;
-  display: none;
-}
-.header-mail{
-  padding-top: 0%!important;
-}
 }
 @media only screen and (max-width:520px){
   .process-shape{
@@ -260,17 +259,10 @@
 #project-box-three{
   margin-top: 9%;
 }
-  .top-banner-area{
-      text-align: center;
-  }
-  .header-icons{
-      text-align: center!important;
-  }
-  .top-icons{
-    margin-left: 0%!important;
-  }
-  .header-logo img{
-      width: 50%!important;
+
+  .header-logo{
+     visibility: hidden;
+     display: none;
   }
   .second-banner{
     visibility: visible;
@@ -280,6 +272,7 @@
   }
   .banner-text h1{
     font-size: 45px!important;
+    line-height: 55px;
   }
   .b-img{
     margin-top: 0px!important;

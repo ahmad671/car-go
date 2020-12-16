@@ -44,16 +44,16 @@ This files table contents are outlined below>>>>>
   --white-color: #ffffff;
   --blue-color: #0088cc;
   --black-color: #212529;
-    
+  --grey-color: #aaaaaa;  
   }    
 html{
   scroll-behavior: smooth;
 }
 header{
-  font-family: 'Andika New Basic', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 body {
-  font-family: 'Andika New Basic', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: black;
   background-color: var(--white-color);
   font-size: 15px;
@@ -61,19 +61,23 @@ body {
 section{
   padding: 100px 0;
 }
-.section-title {
+.top-heading {
   text-align: center;
-  font-weight: bold;
   margin-bottom: 50px;
 }
-.insection-title{
+.top-heading h2{
   font-weight: bold;
+}
+.sub-heading{
   margin-bottom: 30px;
+}
+.sub-heading h2{
+  font-weight: bold;
 }
 .btn{
   background: linear-gradient(135deg,#0088cc 0%,#0169fe 80%);
   border: none;
-  box-shadow: 0px 0px 5px 0px #000000;
+  box-shadow: 0 0 2px 0 #000000;
   color: var(--white-color);
   background-color: #dadada;
   padding: 12px 20px;
@@ -113,6 +117,7 @@ ul{
   padding: 0%;
 }
 p {
+  font-size: 16px;
   padding: 0%;
   margin: 0%;
   color: black;
@@ -179,17 +184,17 @@ p {
 }
 .top-banner p{
   color: var(--white-color);
-  font-size: 80%;
+  font-size: 16px;
 }
 .top-banner{
-  padding-top: 16px;
+  padding-top: 10px;
 } 
 .top-banner-area{
   color: var(--blue-color);
   padding: 15px 0;
   }
 .top-banner h6{
-  font-size: 100%;
+  font-size: 18px;
   font-weight: bold;
   color: var(--white-color);
 }
@@ -226,33 +231,9 @@ p {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
-.header-icons{
-  padding-top: 12px;
-}
 .top-ad-icons{
   font-size: 30px;
 }
-.top-icons{
-  margin-left: 0px;
-  margin-top: 8px;
-}
-
- .header-icons a{
-  color: var(--white-color); 
-  font-size: 20px;
-  margin: 0 4px;
-  border: 2px solid;
-  border-color: var(--blue-color);
-  border-radius: 50%;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-} 
-.header-icons a:hover{
-  background-color: var(--blue-color);
-  border-color: var(--blue-color);
-}
-
 #mynav{
   background-color: var(--blue-color);
   padding: 5px 0;
@@ -268,7 +249,7 @@ p {
 }
 #MyMenu li a{
   text-decoration: none;
-  font-size: 90%;
+  font-size: 16px;
   font-weight: bold;
   color: #FEFFFF;   
 }
@@ -316,14 +297,13 @@ width: 50%;
 }
 #d-navbar li a{
   text-decoration: none;
-  font-size: 90%;
+  font-size: 16px;
   font-weight: bold;
   color: var(--white-color); 
   margin-right: 15px;
 }
 #d-navbar li:hover a{
   color: var(--black-color);
-  font-size: 102%;
 }
 
  .nav-btn{
@@ -337,7 +317,6 @@ width: 50%;
 }
 #d-navbar li:hover .nav-btn{
   color: var(--white-color)!important;
-  font-size: 90%;
 } 
 
 
@@ -363,10 +342,10 @@ width: 50%;
 }
 .banner-text h1{
   color: var(--blue-color);
-  font-size: 90px;
+  font-size: 75px;
+  line-height: 85px;
   font-weight: bold;
   margin-bottom: 50px;
-  font-style: italic;
 }
 .banner-text p{
   margin-bottom: 30px;
@@ -638,15 +617,14 @@ width: 50%;
 #quality-section{
   background-color: black;
 }
-.quality-head h2{
+.quality-text h2{
   color: var(--white-color);
 }
-.quality-head span{
+.quality-text span{
   color: var(--blue-color);
 }
-.quality-head p{
+.quality-para p{
   color: var(--white-color);
-  font-size: 14px;
   margin-bottom: 30px;
   padding-right: 20px;
 
@@ -710,7 +688,7 @@ width: 50%;
 #services{
   padding: 100px 0;
 }
-.services-text h2{
+#services .top-heading{
   margin-bottom: 10px!important;
 }
 .circular-layer {
@@ -789,27 +767,27 @@ width: 50%;
   height: 471px;
   width: 490px;
 }
+.bottom-text{
+  position: absolute;
+  top: 35px;
+  padding: 0 50px;
+  left: 2px;
+}
 .bottom-icon{
   color: var(--blue-color);
   color: black;
   font-size: 50px;
+  margin-bottom: 15px;
 }
-.bottom-text{
-  position: absolute;
-  top: 70px;
-  padding: 0 50px;
-  left: 2px;
+.bottom-text h6{
+  margin-bottom: 20px;
+  font-weight: bold;
 }
-
-
 #services-two{
   padding: 100px 0;
 }
-.second-services{
-  padding-top: 20px;
-}
 .services-icon{
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 .services-icon a{
   background-color:#f1f1f1; ;
@@ -832,6 +810,10 @@ width: 50%;
   padding: 20px;
   background-color: rgba(0, 136, 204, 0.452);
 }
+.icon-details h6{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .icon-details p{
   padding-bottom: 3px;
 }
@@ -842,18 +824,13 @@ width: 50%;
     ================================================
     ================================================  */
 
-.project-header{
-  margin-bottom: 50px;
-}
-.project-header h2{
-  font-weight: bold;
-}
 .project-box img{
-  border-radius: 30px;
-  width: 100%;
+ border-radius: 30px;
+width: 100%;
 display: block;
 height: auto;
-transition: .5s ease;
+transition: 0.5s all ease;
+-webkit-transition: 0.5s all ease;
 backface-visibility: hidden;
 }
 .colordiv{
@@ -903,14 +880,12 @@ color: var(--blue-color);
 .our-skills-area{
   padding-bottom: 50px!important;
 }
-.skills-content {
-  margin-right: 30px;
-}
-.skills-content span{
+
+.skills-text span{
   color: var(--blue-color);
 }
 
-.skills-content p {
+.skills-text p {
   margin-bottom: 30px;
 }
 
@@ -1113,9 +1088,6 @@ color: var(--blue-color);
     ================================================
     ================================================  */
 
-.apt-form{
-  padding-bottom: 50px;
-}
 .testimonial{
   padding-bottom: 50px;
 }
@@ -1123,10 +1095,10 @@ color: var(--blue-color);
   padding-bottom: 50px;
 }
 
-.appointment-content p {
+.appointment-text p {
   margin-bottom: 30px;
 }
-.appointment-content span{
+.appointment-text span{
   color: var(--blue-color);
 }
 .appointment-form .nice-select {
@@ -1168,7 +1140,9 @@ color: var(--blue-color);
 .appointment-form .form-group .form-control {
   background-color: var(--white-color);
 }
-
+.apt-form-btn{
+  padding-bottom: 50px;
+}
 .testimonial-page-area .testimonial {
   margin-bottom: 30px;
   margin-left: 0;
@@ -1178,7 +1152,7 @@ color: var(--blue-color);
   margin-left: 70px;
 }
 
-.testimonial .testimonial-title p {
+.testimonial .testimonial-text p {
   margin-bottom: 30px;
 }
 
@@ -1387,7 +1361,7 @@ color: var(--blue-color);
 
 }
 .stats-text{
-  background-color: rgba(0, 0, 0, 0.5);
+ background-color: rgba(0, 0, 0, 0.5);
  padding: 20px 30px;
 }
 .stats-text span{
@@ -1410,8 +1384,8 @@ color: var(--blue-color);
     padding: 0 40px;
     padding-top: 40px;
     color: black;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 21px 18px #aaaaaa73;
+    background-color: var(--white-color);
+    box-shadow: 0px 15px 18px var(--grey-color);
     font-size: 10%;
     position: relative;
     top: -70px;
@@ -1482,16 +1456,17 @@ color: var(--blue-color);
   padding: 20px 0;
 }
 .blog-btn{
+  margin-bottom: 20px;
+}
+.blog-btn .btn{
   background: none;
   color: var(--black-color);
-  margin-bottom: 20px;
-  margin-left: 20px;
   padding: 8px 12px;
 }
-.blog-btn:hover{
+.blog-btn .btn:hover{
   padding: 8px 20px;
 }
-.blog-show-btn{
+.show-blogs-btn{
   margin-top: 20px;
 }
 
@@ -1528,7 +1503,7 @@ color: var(--blue-color);
 
 
 .main-footer{
-  background-color:#222222;
+  background-color: var(--black-color);
 	position:relative;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -1563,32 +1538,29 @@ color: var(--blue-color);
 	width:50%;
 }
 
-.main-footer .footer-column .widget-title{
+.main-footer .footer-column h2{
 	position: relative;
 	font-size:18px;
 	font-weight:500;
-	color:var(--white-color);	
+	color: var(--white-color);	
 	text-transform:capitalize;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
 }
 
-.main-footer .footer-column .widget-title:after{
+.main-footer .footer-column h2:after{
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	height: 2px;
 	width: 60px;
-	background-color: #aaaaaa;
+	background-color: var(--grey-color);
 	content: "";
 }
 
-.main-footer .about-widget .text{
-	font-size: 14px;
-	line-height: 24px;
-	color: #aaaaaa;
-	font-weight: 400;
-	margin-bottom: 30px;
+.main-footer .widget-content p{
+	color: var(--grey-color);
+	margin-bottom: 25px;
 }
 
 .main-footer .about-widget h4{
@@ -1644,12 +1616,9 @@ color: var(--blue-color);
 	font-size: 14px;
 	line-height: 20px;
 	padding-left: 35px;
-	color: #aaaaaa;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
+	color: var(--grey-color);;
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5 all ease;
 }
 
 .main-footer .services-list li a:before{
@@ -1663,7 +1632,7 @@ color: var(--blue-color);
 	font-weight: 900;
 	font-size: 14px;
 	line-height: 20px;
-	color: #aaaaaa;
+	color: var(--grey-color);;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
@@ -1724,18 +1693,12 @@ color: var(--blue-color);
 	-ms-transform: scale(0);
 	-o-transform: scale(0);
 	transform: scale(0);
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
 }
 
 .main-footer .gallery-widget .image a:hover:before{
 	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
 	transform: scale(1);
 }
 
@@ -1759,12 +1722,9 @@ color: var(--blue-color);
 
 .news-widget .post h4 a{
 	display: inline-block;
-	color: #aaaaaa;
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
+	color: var(--grey-color);;
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
 }
 
 .news-widget .post h4 a:hover{
@@ -2005,10 +1965,6 @@ color: var(--blue-color);
   ================================================
   ================================================ */
 
-
-.contact-page-header{
-  margin-bottom: 50px;
-}
 .address-form-btn{
   text-align: center;
 }
@@ -2016,8 +1972,15 @@ color: var(--blue-color);
   font-size: 20px;
   font-weight: bold;
 }
+#contactForm .form-group{
+  margin-bottom: 20px!important;
+}
 #contactForm label{
   margin-left: 15px;
+}
+.contact-form-btn{
+  text-align: center;
+  margin-top: 10px;
 }
 .contact-follow-page{
   box-shadow: 0px 0px 9px 2px #cccccc5e;

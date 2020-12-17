@@ -1,3 +1,7 @@
+$(document).on('click', '.show', function() {
+    var show = $(this).data('show');
+	$(show).removeClass("hide").siblings().addClass("hide");
+  });
 setTimeout(function(){
     $('.loader_bg').fadeToggle();
   }, 500);

@@ -1276,8 +1276,8 @@ color: var(--blue-color);
     position: relative;
 }
 .our-team .pic img{
-    width: 100%;
-    height: auto;
+    height: 130px;
+    width: 130px;
     transform: scale(1);
     transition: all 0.9s ease 0s;
 }
@@ -1352,13 +1352,10 @@ color: var(--blue-color);
   background-image: url(../images/lower-stat.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
   width: 100%;
+  height: auto;
   background-color: var(--white-color);
   color: var(--white-color);
-  background-size: cover;
-  background-repeat: no-repeat;
-
 }
 .stats-text{
  background-color: rgba(0, 0, 0, 0.5);
@@ -1428,11 +1425,9 @@ color: var(--blue-color);
   border-radius: 30px;
   box-shadow: 0 0 5px 0 #d0d0d0;
 }
-.blog-img{
-  width: 100%;
-}
 .blog-img img{
-  width: 100%;
+  width: 347px;
+  height: 231px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -1666,7 +1661,8 @@ color: var(--blue-color);
 
 .main-footer .gallery-widget .image img{
 	display:block;
-	width:100%;	
+  width: 77px;
+  height: 51px;
 }
 
 .main-footer .gallery-widget .image a{

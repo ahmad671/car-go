@@ -1661,8 +1661,7 @@ color: var(--blue-color);
 
 .main-footer .gallery-widget .image img{
 	display:block;
-  width: 77px;
-  height: 51px;
+  width: 100%;
 }
 
 .main-footer .gallery-widget .image a{

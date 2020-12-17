@@ -312,6 +312,7 @@ width: 50%;
 }
 
  .nav-btn{
+   margin-right: 0!important;
   background: var(--black-color)!important;
   border: none;
   box-shadow: 0 0 3px 1px var(--light-black);

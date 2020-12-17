@@ -44,7 +44,8 @@ This files table contents are outlined below>>>>>
   --white-color: #ffffff;
   --blue-color: #0088cc;
   --black-color: #212529;
-  --grey-color: #aaaaaa;  
+  --grey-color: #aaaaaa;
+  --light-black:#3c4044;  
   }    
 html{
   scroll-behavior: smooth;
@@ -54,7 +55,7 @@ header{
 }
 body {
   font-family: 'Lato', sans-serif;
-  color: black;
+  color: var(--light-black);
   background-color: var(--white-color);
   font-size: 15px;
 }
@@ -77,7 +78,7 @@ section{
 .btn{
   background: linear-gradient(135deg,#0088cc 0%,#0169fe 80%);
   border: none;
-  box-shadow: 0 0 2px 0 #000000;
+  box-shadow: 0 0 2px 0 var(--light-black);
   color: var(--white-color);
   background-color: #dadada;
   padding: 12px 20px;
@@ -108,7 +109,7 @@ a:hover{
     border-color: var(--blue-color);
 }
 h1, h2, h3, h4, h5, h6 {
-  color: black;
+  color: var(--light-black);
   padding: 0%;
   margin: 0%;
 }
@@ -120,7 +121,7 @@ p {
   font-size: 16px;
   padding: 0%;
   margin: 0%;
-  color: black;
+  color: var(--light-black);
 }
 .hide {
   display: none;
@@ -132,6 +133,53 @@ p {
                     Start Pre-Loader
     ================================================
     ================================================  */
+
+    
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .loader_bg{
   position: fixed;
   z-index: 999999;
@@ -188,7 +236,6 @@ p {
 }
 .top-banner p{
   color: var(--white-color);
-  font-size: 16px;
 }
 .top-banner{
   padding-top: 10px;
@@ -273,7 +320,7 @@ p {
   width: 70%;
 }
 .mobilenav-btn:hover{
-  box-shadow: 0 0 3px 0 black;
+  box-shadow: 0 0 3px 0 var(--light-black);
 }
 .navbar-brand img{
 width: 50%;
@@ -304,7 +351,7 @@ width: 50%;
   font-size: 16px;
   font-weight: bold;
   color: var(--white-color); 
-  margin-right: 25px;
+  margin-right: 40px;
 }
 #d-navbar li:hover a{
   color: var(--black-color);
@@ -313,7 +360,7 @@ width: 50%;
  .nav-btn{
   background: var(--black-color)!important;
   border: none;
-  box-shadow: 0 0 3px 1px black;
+  box-shadow: 0 0 3px 1px var(--light-black);
   float: right;
   position: relative;
   top: -12px;
@@ -356,14 +403,14 @@ width: 50%;
 }
 .banner-btn-right{
   margin-left: 20px;
-  color: black;
+  color: var(--light-black);
 }
 .banner-btns .media-left{
-  color: black;
+  color: var(--light-black);
   font-size: 20px;
 }
 .banner-btns .media-right a{
-   color: black; 
+   color: var(--light-black);
 }
 .banner-btns .media-right a:hover{
   color: var(--blue-color); 
@@ -371,7 +418,7 @@ width: 50%;
   -webkit-transition: 0.5s all ease;
 }
 .banner-btn-right i{
-  color: black;
+  color: var(--light-black);
   font-size: 20px;
   padding: 0%;
 }
@@ -503,7 +550,7 @@ width: 50%;
   right: 12px;
   font-size: 50px;
   z-index: 1;
-  color: #000000;
+  color: var(--light-black);
 }
 
 .process-item .process-inner i:after {
@@ -526,7 +573,6 @@ width: 50%;
 
 .process-item .process-inner p {
   margin-bottom: 0;
-  font-size: 14px;
 }
 
 .process-item .process-one {
@@ -708,12 +754,10 @@ width: 50%;
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  color: black;
+  color: var(--light-black);
   font-size: 50px;
 }
-.yes{
-  color: var(--blue-color)!important;
-}
+
 .circular-layer a:hover .s-1{
   color: var(--blue-color);
   -webkit-transition: 0.5s all ease;
@@ -782,7 +826,7 @@ width: 50%;
 }
 .bottom-icon{
   color: var(--blue-color);
-  color: black;
+  color: var(--light-black);
   font-size: 50px;
   margin-bottom: 15px;
 }
@@ -799,7 +843,7 @@ width: 50%;
 .services-icon a{
   background-color:#f1f1f1; ;
   border-radius: 50%;
-  color: black;
+  color: var(--light-black);
   font-size: 50px;
   display: inline-block;
   height: 100px;
@@ -1165,7 +1209,7 @@ color: var(--blue-color);
 
 .testimonial .testimonial-content {
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid var(--light-black);
   padding: 30px;
   position: relative;
   margin-bottom: 50px;
@@ -1387,7 +1431,7 @@ color: var(--blue-color);
 .lower-box-stat{
     padding: 0 40px;
     padding-top: 40px;
-    color: black;
+    color: var(--light-black);
     background-color: var(--white-color);
     box-shadow: 0px 15px 18px var(--grey-color);
     font-size: 10%;
@@ -1402,9 +1446,7 @@ color: var(--blue-color);
   font-size: 35px;
   margin-bottom: 0%;
 }
-.lower-box-stat p{
-  font-size: 14px;
-}
+
 .lower-stat-icons{
   color: var(--blue-color);
   font-size: 55px;
@@ -1764,7 +1806,6 @@ color: var(--blue-color);
 }
 .blog-text h4{
   display: block;
-  color: black;
   text-decoration: none;
   font-size: 130%;
   padding: 20px 0;
@@ -2072,7 +2113,6 @@ color: var(--blue-color);
 }
 .footer-bottom .copyright-text p{
 	padding: 30px 0;
-	font-size : 14px;
 	line-height: 20px;
 	color: var(--white-color);
 	font-weight: 400;
@@ -2319,8 +2359,8 @@ color: var(--blue-color);
   font-size: 20px;
 }
 .follow-us a{
-  color: black;
-  border: 2px solid black;
+  color: var(--light-black);
+  border: 2px solid var(--light-black);
   border-radius: 50%;
   font-size: 20px;
   display: inline-block;
